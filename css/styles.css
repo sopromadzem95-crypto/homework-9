@@ -134,16 +134,13 @@
 }
 .left-div3 {
   width: 504px;
-  margin: 96px 0;
 }
 .picture3 {
   width: 100%;
-  width: 504px;
-  height: 428px;
+  border-radius: 12px;
 }
 .right-div3 {
   width: 504px;
-  height: 264px;
   margin-left: 133px;
 }
 .h3-section3 {
@@ -255,4 +252,180 @@
 }
 .footer-info.margin {
   margin-left: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive styles */
+@media (max-width: 1024px) {
+  /* section 1 responsive */
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .left-div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-div {
+    width: 100%;
+  }
+  .action-text {
+    width: 100%;
+  }
+  /* section 4 responsive */
+  .image {
+    background-image: url("../images/CTAImg-Tablet-1024px.jpg");
+    height: 588px;
+  }
+  /* section 3 responsive */
+  .container3 {
+    flex-direction: column;
+    row-gap: 64px;
+  }
+  .right-div3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .left-div3 {
+    width: 100%;
+  }
+  .picture3 {
+    width: 100%;
+    padding: 32px 32px 0px 32px;
+    height: 550px;
+  }
+  .section3 {
+    height: 895px;
+  }
+  /* footer responsive */
+  .footer-container {
+    padding: 45px 32px;
+  }
+  .footer-column {
+    max-width: 960px;
+  }
+  .footer-info:last-child{
+  display:none;
+}
+}
+
+@media (max-width: 744px) {
+  /* section 1 responsive */
+  .box {
+    flex-direction: column;
+  }
+  .right-div {
+    width: 100%;
+  }
+  /* section 2 responsive */
+  .container2 {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .box2 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* section 3 responsive */
+  .container3 {
+    row-gap: 29px;
+  }
+  /* section 4 responsive */
+  .image {
+    background-image: url("../images/tablet-small.jpg");
+    height: 500px;
+  }
+  /* header responsive */
+  .navigation {
+    display: none;
+  }
+  .action1 {
+    display: none;
+  }
+  .burger-bar {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border-radius: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-column {
+    gap: 50px;
+    max-width: 500px;
+  }
+  .footer-info.margin {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* section 4 responsive */
+  .image {
+    background-image: url("../images/CTAImg-Mobile-375px.jpg");
+    height: 500px;
+  }
+  /* section 3 responsive */
+  .container3 {
+    row-gap: 14px;
+  }
+  .left-div3 {
+    width: 100%;
+    max-width: 327px;
+  }
+  .picture3 {
+    height: 195px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  .section3 {
+    height: 523px;
+  }
+  /* footer responsive */
+  .footer {
+    padding-top: 50px;
+  }
+  .brand {
+    align-self:center;
+    margin-bottom: 25px;
+  }
+  .footer-container {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 375px;
+    padding: 50px 30px 20px;
+  }
+  .footer-info {
+    text-align: center;
+  }
+  /* section 1 responsive */
+  .h2-section1 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .p-section1 {
+    margin-bottom: 24px;
+  }
+  .container {
+    row-gap: 24px;
+  }
 }
